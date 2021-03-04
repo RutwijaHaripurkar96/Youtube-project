@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Navbar</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./fontawesome-free-5.15.2-web/css/all.min.css">
+
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .logo {
+      float: left;
+      padding-top: 10px;
+      padding-right: 10px;
+
+
+    }
+
+    .SearchBar {
+      padding-top: 10px;
+      padding-left: 10px;
+      padding-inline-start: 100px;
+      width: 700px;
+      display: inline-flex;
+
+
+    }
+
+    .search {
+      width: 100%;
+      position: relative;
+    }
+
+    .settinglogo {
+      padding-left: 15px;
+      padding-top: 5px;
+    }
+
+    .applogo {
+      padding-left: 500px;
+      padding-top: 20px;
+      display: inline-flex;
+    }
+
+    .container {
+
+      padding-right: 400px;
+      height: 70px;
+
+
+    }
+
+    .button {
+      width: 20px;
+      height: 10px;
+    }
+
+    #mainbox {
+      background-color: #F5F8F8;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      position: absolute;
+    }
+
+    .video_box {
+      height: 1000px;
+      width: 95%;
+      position: absolute;
+      padding-top: 10px;
+
+    }
+
+    #views {
+      font-size: 13px;
+    }
+
+    #title {
+      color: #111;
+    }
+
+    #channel {
+      font-size: 14px;
+    }
+
+    #tseries {
+      display: inline-flex;
+    }
+
+    #Sub_count {
+      font-style: oblique;
+      padding-left: 10px;
+    }
+
+    #showmore {
+      padding-left: 40px;
+      background-color: #F5F8F8;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container ">
+    <div class="row" style="justify-content: space-around;">
+
+      <div class="col-2" style="padding-left: 0px;">
+        <div class="logo" style="display: inline-flex; position: absolute;">
+
+          <img src="youtube_logo2.png" width="100" height="50">
+
+        </div>
+      </div>
+
+      <div class="col-4 ">
+        <div class="SearchBar">
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Search">
+          <button type="search" class="btn btn-dark"></button>
+
+        </div>
+      </div>
+      <div class="col-4" style="display: inline-flex;">
+        <div class="applogo">
+          <img src="app_icon.png" alt="" width="18" height="18">
+        </div>
+        <div class="settinglogo">
+          <img src="setting_image.png" alt="" width="50" height="50">
+        </div>
+        <button type="button" class="btn">SignIn</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row" style="justify-content: space-around;">
+    <div id="mainbox" style="height: 1370px;">
+      <div class="col-7" style="display: inline-flex; height: 1200px; width: 100%;">
+        <div class="video_box">
+          <video id="video" poster="Khairiyat.png" controls="controls" width="100%" height="400px">
+            <source src="C:\Users\rutwija.r\Desktop\Khairiyat.mp4">
+          </video>
+          <p id="vedio_heading">Khairiyat Video | Chhichhore | Nitesh Tiwari | Arijit Singh | Sushant, Shraddha | Pritam
+            | Amitabh B</p>
+          <div>
+            <a style="padding-right: 300px;">
+              <i>521,799,442 views•Sep 26, 2019</i>
+            </a>
+
+            <button type="button" class="btn btn-secondary" data-ts-toggle="tooltip" data-bs-placement="bottom"
+              title="Liked" style=" width: 30px; border: none; background-color: #F5F8F8; padding-right: 30px;">
+              <img src="like.png" style="height: 20px; width: 20px; border: none;">
+            </button>
+
+            <button type="button" class="btn btn-secondary" data-ts-toggle="tooltip" data-bs-placement="bottom"
+              title="Disliked" style="width:30px; border: none; background-color: #F5F8F8; padding-right: 30px;">
+              <img src="dislike.png" style="height: 20px; width: 20px;">
+            </button>
+
+            <button style="border: none ;">
+              <img src="share.png" style="height: 15px; width: 15px;"> Share
+            </button>
+          </div>
+          <hr />
+
+          <div id="tseries">
+            <img src="tseries.png" style="width: 30px; height: 40px;">
+
+            <div id="Sub_count">T-Series</div>
+            <div id="btn" style="padding-left: 500px;" onclick="Subscribe()">
+              <button
+                style="width: 100px; height:40px; border-radius: 2px ; border:none; background-color: darkred; ">Subscribe</button>
+
+            </div>
+          </div>
+          <p style="font-size: 14px; padding-left: 40px; padding-top: 10px;">Presenting the full video "KHAIRIYAT (BONUS
+            TRACK)" from the Bollywood movie "CHHICHHORE". The film is directed by Nitesh Tiwari and produced by Sajid
+            Nadiadwala under the banner of Nadiadwala Grandson Entertainment. The film stars Sushant Singh </p>
+
+          <div id="showmore">
+            <button style="border-color:#F5F8F8; border: none; background-color: #F5F8F8;">Show More</button>
+
+          </div>
+
+          <hr />
+          
+          <div id="Sort" style="display: inline-flex; ">
+            <p style="padding-left: 10px;">1092 Comments</p>
+          <button style="padding-left: 30px; border: none;padding-top: 1px;height: fit-content; border-color: #F5F8F8; background-color: #F5F8F8;">Sort By</button >
+        </div>
+        
+        <hr/>
+        
+          <p id="ab"></p>
+          <p id="cd"></p>
+          <img src="like.png" style="height: 20px; width: 20px; border: none; opacity: 35%;">
+          <img src="dislike.png" style="height: 20px; width: 30px; border: none; padding-left: 10px; opacity: 35%;">
+
+          <p style="padding-top: 10px;">Rutu</p>
+          <p style="font-style: normal;">The song is very nice.</p>
+          <img src="like.png" style="height: 20px; width: 20px; border: none; opacity: 35%;">
+          <img src="dislike.png" style="height: 20px; width: 30px; border: none; padding-left: 10px; opacity: 35%;">
+
+          <p style="padding-top: 10px;">Rushi</p>
+          <p style="font-style: normal;">The song is very good.</p>
+          <img src="like.png" style="height: 20px; width: 20px; border: none; opacity: 35%;">
+          <img src="dislike.png" style="height: 20px; width: 30px; border: none; padding-left: 10px; opacity: 35%;">
+
+          <p style="padding-top: 10px;">Khushi</p>
+          <p style="font-style: normal;">The loved this song.</p>
+          <img src="like.png" style="height: 20px; width: 20px; border: none; opacity: 35%;">
+          <img src="dislike.png" style="height: 20px; width: 30px; border: none; padding-left: 10px; opacity: 35%;">
+
+
+        </div>
+      </div>
+
+
+
+      <div class="col-5" style="display: inline-flex;padding-left: 5px; position: absolute;">
+        <div class="row">
+          <div class="col" style="display: inline-flex;">
+            <div class="col-3" style="display: inline-flex; " onclick="Namo()">
+              <img src="shankara.png" width="238px" height="140px" style="padding-top: 13px; padding-right: 20px;">
+
+              <div id="video-details">
+                <div id="title" style="height: auto; width: 190px;">
+                  <p style="padding-top: 5px;">Namo Namo - Lyrical | Kedarnath | Sushant Rajput | Sara Ali Khan</p>
+                </div>
+                <div id="channel" style="font-style: oblique;">T-series</div>
+                <div id="views">16k views.
+                  <span class="uploaded">5 days ago</span>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="col-3" style="display: inline-flex; " onclick="WohDin()">
+              <img src="WohDin.png" width="238px" height="140px" style="padding-top: 13px; padding-right: 20px;">
+
+              <div id="video-details">
+                <div id="title" style="height: auto; width: 190px;">
+                  <p style="padding-top: 5px;">Woh Din - Lyrical | Chhichhore | Sushant</p>
+                </div>
+                <div id="channel" style="font-style: oblique;">T-series</div>
+                <div id="views">14k views.
+                  <span class="uploaded">67 days ago</span>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col-3" style="display: inline-flex; " onclick="sanam()">
+              <img src="osanam.png" width="238px" height="140px" style="padding-top: 13px; padding-right: 20px;">
+
+              <div id="video-details">
+                <div id="title" style="height: auto; width: 190px;">
+                  <p style="padding-top: 5px;">O Sanam - Sunoh | Lucky Ali | (Official Video)</p>
+                </div>
+                <div id="channel" style="font-style: oblique;">T-series</div>
+                <div id="views">20k views.
+                  <span class="uploaded">89 days ago</span>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col-3" style="display: inline-flex; " onclick="Tera()">
+              <img src="terayar.png" width="238px" height="140px" style="padding-top: 13px; padding-right: 20px;">
+
+              <div id="video-details">
+                <div id="title" style="height: auto; width: 190px;">
+                  <p style="padding-top: 5px;">Tera Yaar Hoon Main | Sonu Ke Titu Ki Sweety </p>
+                </div>
+                <div id="channel" style="font-style: oblique;">T-series</div>
+                <div id="views">17k views.
+                  <span class="uploaded">7 days ago</span>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col-3" style="display: inline-flex; " onclick="Hawayein()">
+              <img src="Hawayein.png" width="238px" height="140px" style="padding-top: 13px; padding-right: 20px;">
+
+              <div id="video-details">
+                <div id="title" style="height: auto; width: 190px;">
+                  <p style="padding-top: 5px;">Hawayein Lyric Video - Jab Harry Met Sejal</p>
+                </div>
+                <div id="channel" style="font-style: oblique;">T-series</div>
+                <div id="views">24k views.
+                  <span class="uploaded">89 days ago</span>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col-3" style="display: inline-flex; " onclick="Uddgaye()">
+              <img src="Uddgaye.png" width="238px" height="140px" style="padding-top: 13px; padding-right: 20px;">
+
+              <div id="video-details">
+                <div id="title" style="height: auto; width: 190px;">
+                  <p style="padding-top: 5px;">AIB : Udd Gaye by RITVIZ [Official Music Video]</p>
+                </div>
+                <div id="channel" style="font-style: oblique;">T-series</div>
+                <div id="views">95k views.
+                  <span class="uploaded">97 days ago</span>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col-3" style="display: inline-flex; " onclick="Jeet()">
+              <img src="jeet.png" width="238px" height="140px" style="padding-top: 13px; padding-right: 20px;">
+
+              <div id="video-details">
+                <div id="title" style="height: auto; width: 190px;">
+                  <p style="padding-top: 5px;">Ritviz - Jeet [Official Music Video]</p>
+                </div>
+                <div id="channel" style="font-style: oblique;">T-series</div>
+                <div id="views">37k views.
+                  <span class="uploaded">223 days ago</span>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col-3" style="display: inline-flex; " onclick="Sage()">
+              <img src="sage.png" width="238px" height="140px" style="padding-top: 13px; padding-right: 20px;">
+
+              <div id="video-details">
+                <div id="title" style="height: auto; width: 190px;">
+                  <p style="padding-top: 5px;">Ritviz - Sage [Official Music Video]</p>
+                </div>
+                <div id="channel" style="font-style: oblique;">T-series</div>
+                <div id="views">13k views.
+                  <span class="uploaded">76 days ago</span>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="col-3" style="display: inline-flex; " onclick="Rang()">
+              <img src="ranghenave.png" width="238px" height="140px" style="padding-top: 13px; padding-right: 20px;">
+
+              <div id="video-details">
+                <div id="title" style="height: auto; width: 190px;">
+                  <p style="padding-top: 5px;">Rang Hey Nave Nave | Coffee Ani Barach Kahi | Vaibbhav Tatwawdi &
+                    Prarthana Behere</p>
+                </div>
+                <div id="channel" style="font-style: oblique;">T-series</div>
+                <div id="views">38k views.
+                  <span class="uploaded">56 days ago</span>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+</body>
+<script>
+  function Namo() {
+    var name = "Namo Namo - Lyrical | Kedarnath | Sushant Rajput | Sara Ali Khan | Amit Trivedi | Amitabh B"
+    document.getElementById("video").poster = "shankara.png";
+    document.getElementById("vedio_heading").innerText = name
+  }
+
+  function WohDin() {
+    var name = "Woh Din - Lyrical | Chhichhore | Sushant Singh Rajput | Shradha Kapoor"
+    document.getElementById("video").poster = "WohDin.png";
+    document.getElementById("vedio_heading").innerText = name
+  }
+
+  function Tera() {
+    var name = "Tera Yaar Hoon Main | Sonu Ke Titu Ki Sweety | Arijit Singh Rochak Kohli | Song 2018"
+    document.getElementById("video").poster = "terayar.png";
+    document.getElementById("vedio_heading").innerText = name
+  }
+
+  function Hawayein() {
+    var name = "Hawayein Lyric Video - Jab Harry Met Sejal|Shah Rukh Khan, Anushka|Arijit Singh|Pritam"
+    document.getElementById("video").poster = "Hawayein.png";
+    document.getElementById("vedio_heading").innerText = name
+  }
+
+  function sanam() {
+    var name = "O Sanam - Sunoh | Lucky Ali | (Official Video)"
+    document.getElementById("video").poster = "osanam.png";
+    document.getElementById("vedio_heading").innerText = name
+  }
+
+  function Uddgaye() {
+    var name = "AIB : Udd Gaye by RITVIZ [Official Music Video]"
+    document.getElementById("video").poster = "Uddgaye.png";
+    document.getElementById("vedio_heading").innerText = name
+  }
+
+  function Jeet() {
+    var name = "Ritviz - Jeet [Official Music Video]"
+    document.getElementById("video").poster = "jeet.png";
+    document.getElementById("vedio_heading").innerText = name
+  }
+
+  function Sage() {
+    var name = "Ritviz - Sage [Official Music Video]"
+    document.getElementById("video").poster = "sage.png";
+    document.getElementById("vedio_heading").innerText = name
+  }
+
+  function Rang() {
+    var name = "Rang Hey Nave Nave | Coffee Ani Barach Kahi | Vaibbhav Tatwawdi & Prarthana Behere | Shasha Tirupati"
+    document.getElementById("video").poster = "ranghenave.png";
+    document.getElementById("vedio_heading").innerText = name
+  }
+
+
+
+  function Subscribe() {
+    var tag = "Subscribed"
+    document.getElementById("btn").innerText = tag
+  }
+
+
+  // var request = new XMLHttpRequest();
+  // request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
+  // request.onload = function () {
+  //   var data = JSON.parse(this.response);
+  //   data.forEach((rutu) => {
+  //     //document.write(rutu.release_date);
+  //     //document.write(rutu.direction);
+  //     document.getElementById("ab").innerHTML = (rutu.director)
+  //     document.getElementById("cd").innerHTML = (rutu.description)
+  //   }
+  //   );
+  // }
+  // request.send()
+  var data = [
+    {
+      "id": "2baf70d1-42bb-4437-b551-e5fed5a87abe",
+      "title": "Castle in the Sky",
+      "original_title": "天空の城ラピュタ",
+      "original_title_romanised": "Tenkū no shiro Rapyuta",
+      "description": "The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world.",
+      "director": "Hayao Miyazaki",
+      "producer": "Isao Takahata",
+      "release_date": "1986",
+      "running_time": "124",
+      "rt_score": "95",
+      "people": [
+        "https://ghibliapi.herokuapp.com/people/"
+      ],
+      "species": [
+        "https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2"
+      ],
+      "locations": [
+        "https://ghibliapi.herokuapp.com/locations/"
+      ],
+      "vehicles": [
+        "https://ghibliapi.herokuapp.com/vehicles/"
+      ],
+      "url": "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe"
+    },
+    {
+      "id": "12cfb892-aac0-4c5b-94af-521852e46d6a",
+      "title": "Grave of the Fireflies",
+      "original_title": "火垂るの墓",
+      "original_title_romanised": "Hotaru no haka",
+      "description": "In the latter part of World War II, a boy and his sister, orphaned when their mother is killed in the firebombing of Tokyo, are left to survive on their own in what remains of civilian life in Japan. The plot follows this boy and his sister as they do their best to survive in the Japanese countryside, battling hunger, prejudice, and pride in their own quiet, personal battle.",
+      "director": "Isao Takahata",
+      "producer": "Toru Hara",
+      "release_date": "1988",
+      "running_time": "89",
+      "rt_score": "97",
+      "people": [
+        "https://ghibliapi.herokuapp.com/people/"
+      ],
+      "species": [
+        "https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2"
+      ],
+      "locations": [
+        "https://ghibliapi.herokuapp.com/locations/"
+      ],
+      "vehicles": [
+        "https://ghibliapi.herokuapp.com/vehicles/"
+      ],
+      "url": "https://ghibliapi.herokuapp.com/films/12cfb892-aac0-4c5b-94af-521852e46d6a"
+    }
+]
+// var n=0
+// var request = new XMLHttpRequest();
+// var n = request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
+// request.onload = function() {
+//     alert()
+
+   
+    // data.forEach((para) => {
+        // document.write(chanki.director);
+        // document.write(chanki.description);
+var i;        
+for(i=0; i<data.length;i++)
+{
+  
+    document.getElementById("ab").innerHTML = data[i]["title"]
+    document.getElementById("cd").innerHTML = data[i]["description"]
+}
+        
+    // })
+    
+
+// request.send()
+
+</script>
+
+</html>
